@@ -10,7 +10,7 @@
 
   /* fonts */
   --body-font: 'Poppins', sans-serif;
-  --h1-font-size: 1.5rem;
+  --h1-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --large-font-size: .938rem;
   --normal-font-size: .813rem;
@@ -48,23 +48,24 @@ img {
   height: auto;
 }
 
-.container {
-  margin: var(--mb-2) var(--mb-3);
-  max-width: 1300px;
-}
+
 
 nav {
   position: fixed;
-  z-index: 100;
-  top: var(--mb-2);
-  left: var(--mb-3);
-  right: var(--mb-3);
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--light-brown-color);
+  padding: var(--mb-2);
+  opacity: 0.6;
 }
 
 .nav_ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 0;
 }
 
 .nav_li a:hover {
@@ -88,6 +89,75 @@ h1 {
   font-size: var(--h1-font-size);
 }
 
-.header_img {
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-color);
+  height: 100vh;
+}
 
+.card {
+    flex-basis: 25%;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 10px;
+    margin: var(--mb-3);
+    padding: var(--mb-4);
+    background-color: white;
+}
+
+
+.special_button {
+  --c: var(--light-green-color);
+  color: var(--c);
+  font-size: 14px;
+  border: 0.5px solid var(--c);
+  border-radius: 0.5em;
+  width: 6em;
+  height: 2em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+.special_button span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.special_button:hover {
+  color: black;
+}
+
+.special_button:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.special_button span:nth-child(1) {
+  --n: 1;
+}
+
+.special_button span:nth-child(2) {
+  --n: 2;
+}
+
+.special_button span:nth-child(3) {
+  --n: 3;
+}
+
+.special_button span:nth-child(4) {
+  --n: 4;
 }
