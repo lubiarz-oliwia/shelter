@@ -8,8 +8,8 @@ import {
 import MainPage from './components/MainPage';
 import Login from './components/Login';
 import Register from './components/Register';
-import AnimalCard from './components/AnimalCard';
 import AddPetForm from './components/AddPetForm';
+import AnimalPage from './components/AnimalPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/" component={MainPage} />
         <Route path="/logowanie" component={Login} />
         <Route path="/rejestracja" component={Register} />
-        <Route path="/zwierzeXD" component={AnimalCard} />
+        <Route path="/zwierze" component={AnimalPage} />
         <Route path="/dodajzwierze" component={AddPetForm} />
       </Switch>
     </Router>
