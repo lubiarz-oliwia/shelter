@@ -1,5 +1,5 @@
 import React from 'react'
-import dog6 from '../img/dog6.jpeg'
+import dog6 from "../../img/dog6.jpeg"
 
 function Header() {
     return (

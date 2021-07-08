@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { getAnimalsDetails } from '../actions/animals'
-import Card from './Card'
+import { getAnimalsDetails } from '../../actions/animals'
+import Card from '../Card'
 import { useHistory } from "react-router-dom";
 
 function Grid() {
@@ -20,6 +20,7 @@ function Grid() {
     }
 
     return (
+        <>
         <div className="grid">
             {animalsDetails.map((item, index) => {
                 return (
@@ -31,6 +32,7 @@ function Grid() {
                 )
             })}
         </div>
+        </>
     )
 }
 
