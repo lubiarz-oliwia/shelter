@@ -12,7 +12,7 @@ function Nav() {
                     Schronisko dla Bezdomnych Zwierząt
                 </li>
                 <li className='nav_li'>
-                    <Link to="/logowanie">Załóz konto</Link>
+                    <Link to="/logowanie">Zaloguj się</Link>
                 </li>
             </ul>
         </nav>
