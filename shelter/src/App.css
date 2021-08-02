@@ -239,3 +239,9 @@ textarea {
   color: var(--brown-color);
   text-decoration: underline;
 }
+
+.addpet_form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px;  
+}
