@@ -16,6 +16,7 @@ function Grid() {
             pathname: `/zwierze/${id}`,
             state: { id: id }
         };
+        console.log(input)
         history.push(input);
     }
 
